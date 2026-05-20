@@ -8,40 +8,27 @@
 
     <link rel="stylesheet" href="styles.css">
 
-   
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
 <body>
-
-    
     <header>
-
         <h1>MOH'D Portfolio</h1>
 
-        
-        <button id="darkBtn">Dark Mode</button>
+        <button id="darkBtn" type="button" aria-label="Switch color theme">Dark Mode</button>
 
-        
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-
     </header>
 
-    
     <main>
-
-       
         <section id="about">
-
             <h2>About Me</h2>
 
-            
             <img src="food.jpg" alt="My Photo">
 
             <p>
@@ -49,104 +36,80 @@
                 Web Technologies, HTML, CSS,
                 JavaScript and Cybersecurity.
             </p>
-
         </section>
 
-       
         <section id="projects">
-
-            <h2>Projects</h2>
+            <h2>Selected work and practice labs.</h2>
 
             <div class="project-grid">
-
-               
-                <div class="card">
-
+                <article class="card">
                     <h3>Library System</h3>
 
                     <p>
                         A library management project
                         using PHP and MySQL.
                     </p>
+                </article>
 
-                </div>
-
-           
-                <div class="card">
-
+                <article class="card">
                     <h3>Calculator App</h3>
 
                     <p>
                         An advanced calculator using
                         HTML CSS and JavaScript.
                     </p>
+                </article>
 
-                </div>
-
-               
-                <div class="card">
-
+                <article class="card">
                     <h3>Cybersecurity Lab</h3>
 
                     <p>
                         Practice tools and networking
                         security experiments.
                     </p>
-
-                </div>
-
+                </article>
             </div>
-
         </section>
 
-        
         <section id="contact">
-
             <h2>Contact Me</h2>
 
-            <form>
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
 
-                <input type="text"
-                placeholder="Your Name">
+                <label for="email">Your Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
 
-                <input type="email"
-                placeholder="Your Email">
-
-                <textarea
-                placeholder="Your Message"></textarea>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
 
                 <button type="submit">
-                    Send
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Message
                 </button>
-
             </form>
 
             <p>Email: momse@example.com</p>
-
         </section>
-
     </main>
 
-
     <footer>
-
         <p>© 2026 MOH'D Portfolio</p>
 
-        
-        <div class="socials">
-
-            <i class="fab fa-github"></i>
-
-            <i class="fab fa-linkedin"></i>
-
-            <i class="fab fa-instagram"></i>
-
+        <div class="socials" aria-label="Social links">
+            <a href="https://github.com/kichoro1998-ux" aria-label="GitHub profile">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn profile">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" aria-label="Instagram profile">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
-
     </footer>
 
-    
     <script src="app.js"></script>
-
 </body>
 </html>
