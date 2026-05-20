@@ -1,5 +1,9 @@
 # Personal Portfolio
 
+# Student Information
+Name: MOH'D MSELLEM ABDALLA
+REG NUMBER: 24BIT092 
+
 This is my personal portfolio website built using HTML5 and CSS3.
 
 ## GitHub Repository
